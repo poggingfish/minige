@@ -106,7 +106,7 @@ function KeyholeClicked()
         italic(ac)
         return ac
     else
-        add_dialouge("Luna", "I need to find my keys before i use this.", ac)  
+        add_dialouge("Luna", "I need to find my keys before\ni use this.", ac)  
     end
     return ac
 end
