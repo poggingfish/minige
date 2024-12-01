@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+import pathlib, subprocess
+
+v = open(pathlib.Path().home().joinpath(".minige")).read()
+subprocess.run([f"{v}/bin/python3", f"{v}/../src/renderer.py"])
