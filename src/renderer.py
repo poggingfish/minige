@@ -6,7 +6,7 @@ import base64
 import lupa.lua52
 import random
 
-scale = 20
+scale = 15
 try:
     rooms = json.load(open("data/rooms.json", "r"))
 except FileNotFoundError:
