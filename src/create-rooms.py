@@ -29,6 +29,11 @@ def extract(psd):
 
 if __name__ == "__main__":
     rooms = {}
+    try:
+        dir = os.listdir("assets")
+    except FileNotFoundError:
+        print("assets folder does not exist!")
+        exit(1)
     for i in os.listdir("assets"):
         if not i.endswith("psd"):
             continue

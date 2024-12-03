@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
-import pathlib, subprocess
+import pathlib, subprocess, sys
 
 v = open(pathlib.Path().home().joinpath(".minige")).read()
-subprocess.run([f"{v}/bin/python3", f"{v}/../src/renderer.py"])
+if len(sys.argv) > 1 and sys.argv[1] == "createrooms":
+    subprocess.run([f"{v}/bin/python3", f"{v}/../src/create-rooms.py"])
+else:
+    subprocess.run([f"{v}/bin/python3", f"{v}/../src/renderer.py"])
